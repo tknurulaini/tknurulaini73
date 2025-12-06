@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TK Nurul Aini - Beranda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--  <div class="bg-full"></div>
+
+  <div class="container">
+    <!-- NAVBAR -->
+    <div class="navbar fade-in-up">
+      <div class="nav-left">
+        <div class="logo use-image">
+  <img src="logotk1.jpg" alt="Logo Sekolah">
+  <span>TK</span>
+</div>
+
+        <strong>TK Nurul Aini</strong>
+      </div>
+      <div class="nav-links">
+        <a href="Index.html">Beranda</a>
+        <a href="profil.html">Profil</a>
+        <a href="data-sekolah.html">Data Sekolah</a>
+        <a href="struktur.html">Struktur</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero fade-in-up">
+      <div class="hero-left">
+        <span class="badge">Selamat Datang</span>
+        <h1 class="school-title">TK Nurul Aini</h1>
+        <p class="school-sub">Mendidik anak usia dini agar tumbuh cerdas, berakhlak, dan ceria</p>
+
+        <div class="hero-desc">
+          <p>
+            TK Nurul Aini adalah lembaga pendidikan anak usia dini yang berkomitmen
+            untuk membentuk karakter, kreativitas, dan kecintaan belajar sejak dini
+            melalui kegiatan bermain sambil belajar yang menyenangkan.
+          </p>
+
+          <div class="hero-photos">
+            <img src="kegiatankbm1.jpeg" alt="Kegiatan belajar" />
+            <img src="kegiatankbm2.jpeg" alt="Aktivitas anak" />
+            <img src="manasiktk.jpeg" alt="Bermain bersama" />
+          </div>
+        </div>
+
+        <!-- VISI & MISI -->
+        <div class="vm-grid">
+          <div class="vm card">
+            <h5>Visi</h5>
+            <p>Membentuk generasi anak yang cerdas, ceria, dan berakhlak mulia.</p>
+          </div>
+          <div class="vm card">
+            <h5>Misi</h5>
+            <ul class="text-muted">
+              <li>Menyediakan lingkungan belajar yang aman dan nyaman</li>
+              <li>Mengembangkan kreativitas dan potensi anak</li>
+              <li>Menanamkan nilai moral dan agama sejak dini</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK INFO -->
+      <div class="quick-cards">
+        <div class="card">
+          <h4>Agenda Terdekat</h4>
+          <div class="agenda-list">
+            <div class="agenda-item">
+              <div class="agenda-dot"></div>
+              <span class="text-muted">Lomba mewarnai - 20 Juni</span>
+            </div>
+            <div class="agenda-item">
+              <div class="agenda-dot"></div>
+              <span class="text-muted">Kunjungan edukatif - 5 Juli</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Pengumuman</h4>
+          <div class="announcement">
+            <strong>Penerimaan siswa baru</strong>
+            <p class="text-muted">Pendaftaran dibuka hingga 30 Juli</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEGIATAN TERBARU -->
+    <section class="fade-in-up mt-16">
+      <h3>Foto Kegiatan Terbaru</h3>
+      <div class="gallery">
+        <img src="manasiktk.jpeg" alt="Anak-anak belajar" onclick="openModal(this.src)" />
+        <img src="kegiatankbm1.jpeg" alt="Bermain di luar kelas" onclick="openModal(this.src)" />
+        <img src="kegiatankbm2.jpeg" alt="Kegiatan menggambar" onclick="openModal(this.src)" />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer fade-in-up">
+      <small>© 2025 TK Nurul Aini • Semua hak cipta dilindungi</small>
+      <span class="pill">Beranda</span>
+    </footer>
+  </div>
+
+  <!-- FLOATING BUTTON -->
+  <a href="kontak.html" class="fab">Hubungi Kami</a>
+
+  <!-- MODAL / POP-UP -->
+  <div class="modal-backdrop" id="modal">
+    <div class="modal">
+      <div class="modal-header">
+        <strong>Foto Kegiatan</strong>
+        <button class="close-btn" onclick="closeModal()">✖</button>
+      </div>
+      <div class="modal-body center">
+        <img id="modalImage" src="" style="max-width:100%; border-radius:12px" />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(src){
+      document.getElementById('modalImage').src = src;
+      document.getElementById('modal').classList.add('show');
+    }
+
+    function closeModal(){
+      document.getElementById('modal').classList.remove('show');
+    }
+  </script>
+</body>
+</html>

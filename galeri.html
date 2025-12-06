@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TK Nurul Aini - Galeri</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- NAVBAR -->
+    <div class="navbar fade-in-up">
+      <div class="nav-left">
+        <div class="logo use-image">
+  <img src="logotk1.jpg" alt="Logo Sekolah">
+  <span>TK</span>
+</div>
+        <strong>TK Nurul Aini</strong>
+      </div>
+      <div class="nav-links">
+        <a href="Index.html">Beranda</a>
+        <a href="profil.html">Profil</a>
+        <a href="data-sekolah.html">Data Sekolah</a>
+        <a href="struktur.html">Struktur</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <section class="fade-in-up">
+      <span class="badge">Galeri Foto</span>
+      <h1 class="school-title">Kegiatan TK Nurul Aini</h1>
+      <p class="school-sub">
+        Dokumentasi momen belajar dan bermain anak-anak
+      </p>
+    </section>
+
+    <!-- GALERI FOTO -->
+    <section class="gallery fade-in-up mt-16">
+      <img src="kbmguru.jpeg" alt="Belajar di kelas" onclick="openModal(this.src)" />
+      <img src="kegiatankbm1.jpeg" alt="Belajar kelompok" onclick="openModal(this.src)" />
+      <img src="kegiatankbm2.jpeg" alt="Bermain di luar" onclick="openModal(this.src)" />
+      <img src="sanprastk.jpeg" alt="Anak ceria" onclick="openModal(this.src)" />
+      <img src="manasiktk.jpeg" alt="Menggambar" onclick="openModal(this.src)" />
+      <img src="tknurul-aini.jpeg" alt="Waktu belajar" onclick="openModal(this.src)" />
+      <img src="kbm3.jpeg" alt="Bermain bersama" onclick="openModal(this.src)" />
+      <img src="makanbersama.jpeg" alt="Kegiatan seni" onclick="openModal(this.src)" />
+      <img src="masjidtk.jpeg" alt="Belajar sambil bermain" onclick="openModal(this.src)" />
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer fade-in-up">
+      <small>© 2025 TK Nurul Aini • Semua hak cipta dilindungi</small>
+      <span class="pill">Galeri</span>
+    </footer>
+  </div>
+
+  <!-- MODAL POPUP -->
+  <div class="modal-backdrop" id="modal">
+    <div class="modal">
+      <div class="modal-header">
+        <strong>Foto Kegiatan</strong>
+        <button class="close-btn" onclick="closeModal()">✖</button>
+      </div>
+      <div class="modal-body center">
+        <img id="modalImage" src="" style="max-width:100%; border-radius:12px" />
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING BUTTON -->
+  <a href="kontak.html" class="fab">Hubungi Kami</a>
+
+  <script>
+    function openModal(src){
+      document.getElementById('modalImage').src = src
+      document.getElementById('modal').classList.add('show')
+    }
+
+    function closeModal(){
+      document.getElementById('modal').classList.remove('show')
+    }
+  </script>
+
+</body>
+</html>
+
