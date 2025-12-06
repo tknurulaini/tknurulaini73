@@ -6,20 +6,23 @@
   <title>TK Nurul Aini - Beranda</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!--  <div class="bg-full"></div>
+
+  <div class="bg-full"></div>
 
   <div class="container">
-    <!- NAVBAR -->
+
+    <!-- NAVBAR -->
     <div class="navbar fade-in-up">
       <div class="nav-left">
         <div class="logo use-image">
-  <img src="logotk1.jpg" alt="Logo Sekolah">
-  <span>TK</span>
-</div>
-
+          <img src="logotk1.jpg" alt="Logo Sekolah" />
+          <span>TK</span>
+        </div>
         <strong>TK Nurul Aini</strong>
       </div>
+
       <div class="nav-links">
         <a href="Index.html">Beranda</a>
         <a href="profil.html">Profil</a>
@@ -51,12 +54,13 @@
           </div>
         </div>
 
-        <!-- VISI & MISI -->
+        <!-- VISI MISI -->
         <div class="vm-grid">
           <div class="vm card">
             <h5>Visi</h5>
             <p>Membentuk generasi anak yang cerdas, ceria, dan berakhlak mulia.</p>
           </div>
+
           <div class="vm card">
             <h5>Misi</h5>
             <ul class="text-muted">
@@ -68,7 +72,7 @@
         </div>
       </div>
 
-      <!-- QUICK INFO -->
+      <!-- QUICK CARDS -->
       <div class="quick-cards">
         <div class="card">
           <h4>Agenda Terdekat</h4>
@@ -77,6 +81,7 @@
               <div class="agenda-dot"></div>
               <span class="text-muted">Lomba mewarnai - 20 Juni</span>
             </div>
+
             <div class="agenda-item">
               <div class="agenda-dot"></div>
               <span class="text-muted">Kunjungan edukatif - 5 Juli</span>
@@ -94,13 +99,14 @@
       </div>
     </section>
 
-    <!-- KEGIATAN TERBARU -->
+    <!-- GALERI TERBARU -->
     <section class="fade-in-up mt-16">
       <h3>Foto Kegiatan Terbaru</h3>
+
       <div class="gallery">
-        <img src="manasiktk.jpeg" alt="Anak-anak belajar" onclick="openModal(this.src)" />
-        <img src="kegiatankbm1.jpeg" alt="Bermain di luar kelas" onclick="openModal(this.src)" />
-        <img src="kegiatankbm2.jpeg" alt="Kegiatan menggambar" onclick="openModal(this.src)" />
+        <img src="manasiktk.jpeg" onclick="openModal(this.src)" />
+        <img src="kegiatankbm1.jpeg" onclick="openModal(this.src)" />
+        <img src="kegiatankbm2.jpeg" onclick="openModal(this.src)" />
       </div>
     </section>
 
@@ -109,18 +115,20 @@
       <small>© 2025 TK Nurul Aini • Semua hak cipta dilindungi</small>
       <span class="pill">Beranda</span>
     </footer>
+
   </div>
 
   <!-- FLOATING BUTTON -->
   <a href="kontak.html" class="fab">Hubungi Kami</a>
 
-  <!-- MODAL / POP-UP -->
+  <!-- MODAL -->
   <div class="modal-backdrop" id="modal">
     <div class="modal">
       <div class="modal-header">
         <strong>Foto Kegiatan</strong>
         <button class="close-btn" onclick="closeModal()">✖</button>
       </div>
+
       <div class="modal-body center">
         <img id="modalImage" src="" style="max-width:100%; border-radius:12px" />
       </div>
@@ -128,14 +136,15 @@
   </div>
 
   <script>
-    function openModal(src){
-      document.getElementById('modalImage').src = src;
-      document.getElementById('modal').classList.add('show');
+    function openModal(src) {
+      document.getElementById("modalImage").src = src;
+      document.getElementById("modal").classList.add("show");
     }
 
-    function closeModal(){
-      document.getElementById('modal').classList.remove('show');
+    function closeModal() {
+      document.getElementById("modal").classList.remove("show");
     }
   </script>
+
 </body>
 </html>
